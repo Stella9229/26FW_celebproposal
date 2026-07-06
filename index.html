@@ -383,16 +383,79 @@
   .takeaway .tt{font-size:12px;font-weight:800;letter-spacing:.16em;opacity:.92;margin-bottom:10px;}
   .takeaway .tmain{font-size:21px;font-weight:800;letter-spacing:-.045em;line-height:1.45;}
 
+  /* ===== TAB3 전략 요약 (상단) ===== */
+  .strat-sum{background:linear-gradient(135deg,#fff,#fff8f4);border:1.5px solid var(--point2);
+    border-radius:18px;padding:24px 26px;box-shadow:0 8px 24px rgba(232,116,106,.1);}
+  .strat-sum .ss-head{font-size:16px;font-weight:800;color:var(--dbrown);margin-bottom:18px;letter-spacing:-.035em;line-height:1.5;}
+  .strat-sum .ss-head .pt{color:var(--point);}
+  .strat-flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:10px;align-items:stretch;}
+  .sf{background:#fff;border:1px solid var(--line);border-radius:14px;padding:17px 16px;text-align:center;}
+  .sf .sf-n{font-size:10.5px;font-weight:800;color:var(--point);letter-spacing:.06em;margin-bottom:7px;}
+  .sf .sf-t{font-size:14px;font-weight:800;color:var(--dbrown);margin-bottom:8px;letter-spacing:-.03em;}
+  .sf .sf-d{font-size:11.5px;color:var(--mute);line-height:1.5;letter-spacing:-.02em;}
+  .sf .sf-d b{color:var(--brown);font-weight:700;}
+  .sf-op{display:flex;align-items:center;justify-content:center;color:var(--point2);font-size:22px;font-weight:900;}
+
+  /* ===== 실행 존 (STYLING/CONTENT/VIRAL) ===== */
+  .exec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:start;}
+  .exec{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;
+    box-shadow:0 4px 16px rgba(92,70,54,.06);}
+  .exec .ex-head{padding:15px 18px 12px;border-bottom:1px solid var(--line);}
+  .exec .ex-badge{display:inline-block;font-size:10.5px;font-weight:800;color:#fff;background:var(--point);
+    padding:4px 11px;border-radius:14px;letter-spacing:.04em;margin-bottom:8px;}
+  .exec .ex-badge.c2{background:var(--dsand);} .exec .ex-badge.c3{background:var(--brown);}
+  .exec .ex-title{font-size:15px;font-weight:800;color:var(--dbrown);letter-spacing:-.03em;margin-bottom:6px;}
+  .exec .ex-desc{font-size:11.5px;color:var(--mute);line-height:1.55;letter-spacing:-.02em;}
+  .exec .ex-body{padding:14px;}
+  .exec .ex-cad{border-radius:10px;overflow:hidden;border:1px solid var(--line);margin-bottom:9px;background:#fff;}
+  .exec .ex-cad img{width:100%;display:block;}
+  .exec .ex-cad-label{font-size:10px;font-weight:700;color:var(--dsand);text-align:center;padding:5px;background:var(--cream);letter-spacing:-.02em;}
+  .exec .ex-media{border-radius:10px;overflow:hidden;background:#111;aspect-ratio:4/5;}
+  .exec .ex-media video,.exec .ex-media img{width:100%;height:100%;object-fit:cover;display:block;}
+  .exec .ex-media-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+  .exec .ex-cap{font-size:10.5px;color:var(--mute);text-align:center;padding-top:8px;font-weight:600;letter-spacing:-.02em;}
+
+  /* ===== 멤버 제품 이미지 ===== */
+  .mem .m-prod{border-top:1px solid var(--line);padding:10px 12px;background:var(--cream);}
+  .mem .m-prod-label{font-size:9.5px;font-weight:800;color:var(--point);letter-spacing:.03em;margin-bottom:5px;}
+  .mem .m-prod img{width:100%;display:block;border-radius:6px;}
+
+  /* ===== 최종 AI 검증 인사이트 ===== */
+  .ai-verdict{background:linear-gradient(135deg,var(--dbrown),var(--brown) 70%,var(--dsand) 135%);
+    color:var(--cream);border-radius:20px;padding:30px 32px;position:relative;overflow:hidden;
+    box-shadow:0 18px 44px rgba(58,44,32,.3);margin-top:34px;}
+  .ai-verdict::before{content:"";position:absolute;right:-70px;top:-70px;width:250px;height:250px;
+    background:radial-gradient(circle,rgba(232,116,106,.3),transparent 70%);}
+  .ai-verdict .av-label{display:inline-flex;align-items:center;gap:7px;position:relative;z-index:1;
+    background:rgba(244,168,159,.24);color:var(--point2);font-size:11px;font-weight:800;
+    padding:6px 15px;border-radius:20px;letter-spacing:.1em;margin-bottom:16px;}
+  .ai-verdict .av-label::before{content:"◆";font-size:9px;}
+  .ai-verdict .av-head{position:relative;z-index:1;font-size:20px;font-weight:800;line-height:1.45;
+    letter-spacing:-.04em;color:#fff;margin-bottom:20px;}
+  .ai-verdict .av-head .pt{color:var(--point2);}
+  .ai-verdict .av-grid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-bottom:20px;}
+  .ai-verdict .av-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:17px 16px;}
+  .ai-verdict .av-card .avc-n{font-size:10.5px;font-weight:800;color:var(--point2);letter-spacing:.05em;margin-bottom:8px;}
+  .ai-verdict .av-card .avc-t{font-size:14px;font-weight:800;color:#fff;margin-bottom:7px;letter-spacing:-.03em;}
+  .ai-verdict .av-card .avc-d{font-size:11.5px;line-height:1.55;font-weight:500;color:var(--cream);letter-spacing:-.02em;}
+  .ai-verdict .av-card .avc-d b{color:#fff;font-weight:800;}
+  .ai-verdict .av-final{position:relative;z-index:1;background:var(--point);border-radius:15px;
+    padding:20px 24px;display:flex;align-items:center;gap:14px;box-shadow:0 10px 26px rgba(232,116,106,.35);}
+  .ai-verdict .av-final .avf-badge{flex-shrink:0;font-size:11px;font-weight:800;color:var(--point);
+    background:#fff;padding:8px 13px;border-radius:12px;text-align:center;line-height:1.3;letter-spacing:-.02em;}
+  .ai-verdict .av-final .avf-text{font-size:15.5px;font-weight:800;color:#fff;line-height:1.5;letter-spacing:-.03em;}
+  .ai-verdict .av-final .avf-text .u{background:rgba(255,255,255,.25);padding:1px 6px;border-radius:5px;}
+
   .divider{height:1px;background:var(--line);margin:38px 0;}
   .note{font-size:12px;color:var(--dsand);text-align:center;margin-top:16px;font-weight:600;letter-spacing:-.02em;}
 
   @media(max-width:960px){
-    .g3,.g4,.cs-grid,.mem-grid,.cs-synth,.others .oth-grid,.kpi-grid,.why-hero .wh-grid,.wh-points{grid-template-columns:1fr 1fr;}
+    .g3,.g4,.cs-grid,.mem-grid,.cs-synth,.others .oth-grid,.kpi-grid,.why-hero .wh-grid,.wh-points,.exec-grid,.ai-verdict .av-grid{grid-template-columns:1fr 1fr;}
     .rank-grid{grid-template-columns:1fr;}
     .wall{columns:2;}
     .cad-wrap,.g2,.zone-split{grid-template-columns:1fr;}
     .flow{flex-direction:column;} .flow-arrow{transform:rotate(90deg);padding:8px 0;}
-    .growth-eq{grid-template-columns:1fr;} .geq-op{padding:4px 0;}
+    .growth-eq,.strat-flow{grid-template-columns:1fr;} .geq-op,.sf-op{padding:4px 0;}
     .head-left h1{font-size:22px;}
   }
 </style>
@@ -828,21 +891,38 @@
     <div class="main">MLB HIP CITY를 보다 현실적이고 공감도 높게 전달 — <span class="em">"RESCENE, BE REAL · BE MLB"</span></div>
   </div>
 
-  <!-- CAD 키 아이템 상단 -->
-  <div class="section-tag">KEY ITEM — SH/BN 카테고리 집중</div>
-  <div class="cad-wrap">
-    <div class="cad">
-      <div class="cad-head">KEY CATEGORY · SH (슈즈)</div>
-      <img src="assets/cad_shoes.jpg" alt="슈즈 CAD 키아이템">
-    </div>
-    <div class="cad">
-      <div class="cad-head sub">KEY CATEGORY · BN (비니·니트)</div>
-      <img src="assets/cad_beanie.jpg" alt="비니 CAD 키아이템">
+  <!-- 전략 요약 (TAB1,2 종합) -->
+  <div class="section-tag">EXECUTION STRATEGY — 전체 요약</div>
+  <div class="strat-sum">
+    <div class="ss-head">TAB 1·2에서 검증된 <span class="pt">케이스 스터디 성공 공식</span>과 <span class="pt">리센느의 발견형 성장 강점</span>을 결합한 26FW 실행 전략</div>
+    <div class="strat-flow">
+      <div class="sf">
+        <div class="sf-n">검증된 공식</div>
+        <div class="sf-t">잘 노는 라이징 셀럽</div>
+        <div class="sf-d">케이스 스터디 결론 — 제품보다 <b>캐릭터·라이프스타일</b>을 먼저 소비시키는 리얼 콘텐츠</div>
+      </div>
+      <div class="sf-op">+</div>
+      <div class="sf">
+        <div class="sf-n">리센느 강점</div>
+        <div class="sf-t">발견형 성장·밈 파워</div>
+        <div class="sf-d">2억+ 조회수·음원 역주행으로 입증된 <b>자발적 바이럴 엔진</b> 보유</div>
+      </div>
+      <div class="sf-op">=</div>
+      <div class="sf">
+        <div class="sf-n">26FW 실행안</div>
+        <div class="sf-t">BE REAL, BE MLB</div>
+        <div class="sf-d">리센느 리얼 라이프에 MLB를 자연스럽게 녹여 <b>SH/BN 카테고리 매출 연결</b></div>
+      </div>
     </div>
   </div>
-  <div class="note">리센느만의 자연스러운 스타일링으로 SH/BN 서브 카테고리 집중 노출 — 카리나(메인 아이템)와 역할 분담</div>
 
   <div class="divider"></div>
+
+  <!-- 실행 컨셉 -->
+  <div class="lead">
+    <div class="sub">최신 K-POP 트렌드인 리얼 라이프 콘텐츠를 숏폼·릴스로 확장</div>
+    <div class="main">MLB HIP CITY를 보다 현실적이고 공감도 높게 전달 — <span class="em">"RESCENE, BE REAL · BE MLB"</span></div>
+  </div>
 
   <div class="timeline">
     <div class="tl-node"><div class="dot"></div><div class="date">8/27</div><div class="ev">리센느 26F 화보</div></div>
@@ -850,53 +930,56 @@
     <div class="tl-node"><div class="dot"></div><div class="date">10/13</div><div class="ev">리센느 26W 화보</div></div>
   </div>
 
-  <div class="grid g3" style="margin-top:22px;">
-    <div class="card">
-      <div class="kk">STYLING</div>
-      <h3>Youthful Hip City</h3>
-      <ul>
-        <li>리센느만의 자연스러운 스타일링</li>
-        <li><span class="em">SH/BN 카테고리</span> 집중 노출</li>
-      </ul>
+  <!-- 실행 존: STYLING / CONTENT / VIRAL -->
+  <div class="exec-grid" style="margin-top:22px;">
+    <div class="exec">
+      <div class="ex-head">
+        <span class="ex-badge">STYLING</span>
+        <div class="ex-title">Youthful Hip City</div>
+        <div class="ex-desc">리센느만의 자연스러운 스타일링으로 <b>SH/BN 카테고리 집중 노출</b></div>
+      </div>
+      <div class="ex-body">
+        <div class="ex-cad">
+          <img src="assets/key_category_cad.jpg" alt="KEY CATEGORY SH/BN">
+          <div class="ex-cad-label">KEY CATEGORY — SH/BN</div>
+        </div>
+        <div class="ex-cad">
+          <img src="assets/sub_styling_cad.jpg" alt="SUB STYLING">
+          <div class="ex-cad-label">SUB STYLING — 아우터·니트</div>
+        </div>
+      </div>
     </div>
-    <div class="card">
-      <div class="kk">CONTENT &amp; EVENT</div>
-      <h3>Be Real, Be MLB</h3>
-      <ul>
-        <li>멤버 일상 매력·생동감 있는 라이프스타일</li>
-        <li>MLB 아이템을 자연스럽게 녹여 <span class="em">리얼 경험 확장</span></li>
-      </ul>
+    <div class="exec">
+      <div class="ex-head">
+        <span class="ex-badge c2">CONTENT &amp; EVENT</span>
+        <div class="ex-title">Be Real, Be MLB</div>
+        <div class="ex-desc">멤버 일상 매력·생동감 있는 라이프스타일에 MLB 아이템을 자연스럽게 녹여 <b>리얼 경험 확장</b></div>
+      </div>
+      <div class="ex-body">
+        <div class="ex-media"><video src="assets/ex_illit_wonhee.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+        <div class="ex-cap">리얼 라이프 콘텐츠 — 원희 '스파게티 드셔봐'</div>
+      </div>
     </div>
-    <div class="card">
-      <div class="kk">VIRAL</div>
-      <h3>Gen-Z Buzz</h3>
-      <ul>
-        <li>멤버 간 케미·예능감 담은 콘텐츠</li>
-        <li>자발적 바이럴 및 <span class="em">Z세대 관여도·화제성</span> 확대</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- 실행 콘텐츠 영상 -->
-  <div class="grid g3" style="margin-top:18px;">
-    <div class="vid-card">
-      <video src="assets/ex_illit_wonhee.mp4" autoplay muted loop playsinline preload="metadata"></video>
-      <div class="vid-cap">Be Real, Be MLB — 리얼 라이프 콘텐츠</div>
-    </div>
-    <div class="vid-card">
-      <video src="assets/ex_coach_kiki.mp4" autoplay muted loop playsinline preload="metadata"></video>
-      <div class="vid-cap">파티 무드 인플 콘텐츠 (코치×키키 벤치마크)</div>
-    </div>
-    <div class="vid-card">
-      <video src="assets/ex_h2h.mp4" autoplay muted loop playsinline preload="metadata"></video>
-      <div class="vid-cap">잘 놀고 있는 무드 (하츠투하츠 벤치마크)</div>
+    <div class="exec">
+      <div class="ex-head">
+        <span class="ex-badge c3">VIRAL</span>
+        <div class="ex-title">Gen-Z Buzz</div>
+        <div class="ex-desc">멤버 간 케미·예능감 담은 콘텐츠로 <b>자발적 바이럴 및 Z세대 관여도·화제성 확대</b></div>
+      </div>
+      <div class="ex-body">
+        <div class="ex-media-row">
+          <div class="ex-media"><video src="assets/ex_coach_kiki.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="ex-media"><video src="assets/ex_h2h.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+        </div>
+        <div class="ex-cap">파티 무드(코치×키키) · 잘 노는 무드(하츠투하츠) 벤치마크</div>
+      </div>
     </div>
   </div>
 
   <div class="divider"></div>
 
-  <!-- 멤버별 활용 전략 -->
-  <div class="section-tag brown">멤버별 콘텐츠 활용 포인트</div>
+  <!-- 멤버별 활용 전략 + 주력 제품 -->
+  <div class="section-tag brown">멤버별 콘텐츠 활용 &amp; 주력 제품</div>
   <div class="mem-grid">
     <div class="mem">
       <div class="m-photo"><img src="assets/mem_minami.png" alt="미나미"></div>
@@ -905,6 +988,10 @@
         <div class="m-role">바이럴 가능성 멤버</div>
         <div class="m-tags"><span>리액션 담당</span><span>갸루 캐릭터</span><span>화제성</span></div>
         <div class="m-hash">#Y2K #STREET #고양이상</div>
+      </div>
+      <div class="m-prod">
+        <div class="m-prod-label">주력 제품 · Y2K STREET</div>
+        <img src="assets/prod_minami.png" alt="미나미 주력 제품">
       </div>
     </div>
     <div class="mem">
@@ -915,6 +1002,10 @@
         <div class="m-tags"><span>성장 서사</span><span>비주얼</span><span>순둥 막내</span></div>
         <div class="m-hash">#CITY CHIC #FEMININE</div>
       </div>
+      <div class="m-prod">
+        <div class="m-prod-label">주력 제품 · CITY CHIC</div>
+        <img src="assets/prod_jena.png" alt="제나 주력 제품">
+      </div>
     </div>
     <div class="mem">
       <div class="m-photo"><img src="assets/mem_liv.png" alt="리브"></div>
@@ -923,6 +1014,10 @@
         <div class="m-role">볼매 냉미녀</div>
         <div class="m-tags"><span>팬덤 락인</span><span>메인보컬</span><span>반전매력</span></div>
         <div class="m-hash">#SPORTIVE #FEMININE</div>
+      </div>
+      <div class="m-prod">
+        <div class="m-prod-label">주력 제품 · SPORTIVE</div>
+        <img src="assets/prod_liv.png" alt="리브 주력 제품">
       </div>
     </div>
     <div class="mem">
@@ -933,12 +1028,38 @@
         <div class="m-tags"><span>호감도</span><span>웃수저</span><span>감성형</span></div>
         <div class="m-hash">#NATURAL #LOVELY #토끼상</div>
       </div>
+      <div class="m-prod">
+        <div class="m-prod-label">주력 제품 · NATURAL LOVELY</div>
+        <img src="assets/prod_mei.png" alt="메이 주력 제품">
+      </div>
     </div>
   </div>
 
-  <div class="takeaway">
-    <div class="tt">KEY TAKEAWAY</div>
-    <div class="tmain">리센느는 카리나(BRAND ICON)와 역할이 겹치지 않는 Category Leader로서,<br>Z세대 공감·SH/BN 카테고리·자발적 바이럴을 완성하는 26FW 최적의 신규 모델입니다.</div>
+  <!-- 최종 AI 검증 인사이트 -->
+  <div class="ai-verdict">
+    <span class="av-label">AI FINAL VERDICT · 전략 종합 검증</span>
+    <div class="av-head">3개 축(전략·근거·실행)을 교차 검증한 결과, <span class="pt">리센느 계약은 26FW 목표 달성에 최적의 선택</span>으로 판단됩니다.</div>
+    <div class="av-grid">
+      <div class="av-card">
+        <div class="avc-n">TAB 1 · 전략 검증</div>
+        <div class="avc-t">포지션 적합성 ✓</div>
+        <div class="avc-d">글로벌 케이스 스터디의 성공 공식('잘 노는 라이징 셀럽')에 <b>4개 후보 중 유일하게 완전 부합</b>. 카리나와 역할 비중복.</div>
+      </div>
+      <div class="av-card">
+        <div class="avc-n">TAB 2 · 파급력 검증</div>
+        <div class="avc-t">화제성 입증 ✓</div>
+        <div class="avc-d"><b>누적 2억+ 조회수·신인 평판 1위·음원 역주행</b>으로 브랜드 노출→대중 유입 전환력을 이미 데이터로 입증.</div>
+      </div>
+      <div class="av-card">
+        <div class="avc-n">TAB 3 · 실행 검증</div>
+        <div class="avc-t">매출 연결성 ✓</div>
+        <div class="avc-d">멤버별 캐릭터를 <b>SH/BN 주력 카테고리에 1:1 매칭</b> 가능. 리얼 콘텐츠가 곧 카테고리 판매로 직결.</div>
+      </div>
+    </div>
+    <div class="av-final">
+      <div class="avf-badge">AI<br>CONFIDENCE<br>HIGH</div>
+      <div class="avf-text">세 축이 모두 정합적으로 수렴 — <span class="u">리센느 26FW 모델 계약은 화제성·비용효율·매출연결 관점 모두에서 '실행 권고' 결론</span>에 도달합니다.</div>
+    </div>
   </div>
 </section>
 
